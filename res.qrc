@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/assets/sounds">
+        <file>lasershot.mp3</file>
+        <file>explosion.wav</file>
+        <file>backgroundMusic.mp3</file>
+    </qresource>
+    <qresource prefix="/assets/images">
+        <file>spaceship_small.png</file>
+        <file>enemy.png</file>
+        <file>beam.png</file>
+        <file>background.jpg</file>
+    </qresource>
+</RCC>
