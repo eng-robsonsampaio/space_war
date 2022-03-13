@@ -11,7 +11,7 @@ Game::Game(){
     // create a scene
     scene = new QGraphicsScene();
     scene->setSceneRect(0,0,800,600);
-    setBackgroundBrush(QBrush(QImage(":/assets/images/background.jpg")));
+    setBackgroundBrush(QBrush(QImage("/home/robson/projetos/space_war/assets/images/background.jpg")));
 
     // create an item
     rect = new MyRect();
@@ -52,7 +52,7 @@ void Game::playSound(QString sound) {
     audioOutput = new QAudioOutput;
     player->setAudioOutput(audioOutput);
     //connect(player, SIGNAL(positionChanged(qint64)), this, SLOT(positionChanged(qint64)));
-    player->setSource(QUrl("qrc:/assets/sounds/" + sound));
+    player->setSource(QUrl::fromLocalFile("/home/robson/projetos/space_war/assets/sounds/" + sound));
     audioOutput->setVolume(0.1);
     player->play();
 }

@@ -6,7 +6,7 @@ Score::Score(QGraphicsItem *parent): QGraphicsTextItem(parent){
 
     // draw the text
     setPlainText(QString("Score: ") + QString::number(this->scorePoints));
-    setDefaultTextColor(Qt::blue);
+    setDefaultTextColor(Qt::white);
     setFont(QFont("times", 16));
 }
 

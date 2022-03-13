@@ -10,7 +10,7 @@ extern Game *game;
 
 Bullet::Bullet(QGraphicsItem *parent): QObject(), QGraphicsPixmapItem(parent){
     // draw the graphics
-    setPixmap(QPixmap(":/assets/images/beam.png"));
+    setPixmap(QPixmap("/home/robson/projetos/space_war/assets/images/beam.png"));
     setPos(x(), y());
     // connect
     QTimer *timer = new QTimer();

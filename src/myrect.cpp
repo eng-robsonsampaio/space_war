@@ -7,7 +7,7 @@
 #include <QKeyEvent>
 
 MyRect::MyRect(QGraphicsItem *parent): QGraphicsPixmapItem(parent){
-    setPixmap(QPixmap(":/assets/images/spaceship_small.png"));
+    setPixmap(QPixmap("/home/robson/projetos/space_war/assets/images/spaceship_small.png"));
 }
 
 void MyRect::keyPressEvent(QKeyEvent *event)

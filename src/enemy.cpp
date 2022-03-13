@@ -12,7 +12,7 @@ Enemy::Enemy(QGraphicsItem *parent): QObject(), QGraphicsPixmapItem(parent) {
     srand(time(NULL));
     int min = 40;
     int max = 940;
-    setPixmap(QPixmap(":/assets/images/enemy.png"));
+    setPixmap(QPixmap("/home/robson/projetos/space_war/assets/images/enemy.png"));
     setPos(rand()%(max-min + 1) + min, -300);
     QTimer *timer = new QTimer();
     connect(timer, SIGNAL(timeout()), this, SLOT(moveEnemy()));
