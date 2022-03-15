@@ -9,6 +9,7 @@ class MyRect:public QObject, public QGraphicsPixmapItem{
     Q_OBJECT
 public:
     MyRect(QGraphicsItem *parent=nullptr);
+    void keyReleaseEvent(QKeyEvent *event);
     void keyPressEvent(QKeyEvent *event);
 public slots:
     void createEnemy();

@@ -15,6 +15,7 @@ set(CMAKE_PREFIX_PATH $ENV{QTDIR})
 find_package(Qt6 COMPONENTS Core REQUIRED)
 find_package(Qt6 COMPONENTS Widgets REQUIRED)
 find_package(Qt6 COMPONENTS Multimedia REQUIRED)
+find_package(Qt6 COMPONENTS Gui REQUIRED)
 
 #=================== INCLUSION OF Project Files ====================#
 set(FORMS_DIR "${CMAKE_SOURCE_DIR}/assets")
@@ -56,3 +57,4 @@ target_include_directories(SPACE_WAR PRIVATE ${SOURCE_DIR})
 #===================== LINKING LIBRARIES =======================#
 target_link_libraries(SPACE_WAR Qt6::Widgets)
 target_link_libraries(SPACE_WAR Qt6::Multimedia)
+target_link_libraries(SPACE_WAR Qt6::Gui)
